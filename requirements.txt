@@ -1,3 +1,9 @@
 pytest
 pytest-cache
 invoke
+flake8
+mccabe
+werkzeug
+jinja2
+execnet
+micromigrate
