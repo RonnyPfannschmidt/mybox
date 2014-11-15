@@ -1,3 +1,4 @@
 \.tox
 \.env
 \.cache
+node_modules
