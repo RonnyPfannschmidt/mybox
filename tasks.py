@@ -34,9 +34,14 @@ def test():
     run('py.test')
 
 
+@task
+def serve():
+    run('python -m mybox')
+
 ns = Collection(
     fetch_deps,
     refresh_env,
     check,
+    serve,
     test,
 )
