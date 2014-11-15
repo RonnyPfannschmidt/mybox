@@ -1,6 +1,9 @@
-from mybox import app
+import morepath
+from mybox import App
 
 #XXX: evil
-app.run(
-    debug=True,
-    use_reloader=True)
+if __name__ == '__main__':
+    config = morepath.setup()
+    config.scan()
+    config.commit()
+    morepath.run(App())

@@ -1,13 +1,15 @@
-from flask import Flask
+from more.static import StaticApp
 
 
-app = Flask(__name__
-    static_file)
+class App(StaticApp):
+    pass
 
 
+@App.path(path='')
+class Root(object):
+    pass
 
 
-@app.route('/')
-def index():
-    return app.send_static_file('static/index.html')
-
+@App.view(model=Root)
+def root(self, request):
+    return ''
