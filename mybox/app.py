@@ -27,6 +27,7 @@ class Root(object):
 @App.html(model=Root)
 def hello(self, request):
     request.include('jquery')
+    request.include('pure')
     with open(join(root, 'static/index.html')) as fp:
         return fp.read()
 
