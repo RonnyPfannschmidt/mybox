@@ -38,6 +38,7 @@ class Root(object):
 def hello(self, request):
     request.include('react/react-with-addons.js')
     request.include('react/JSXTransformer.js')
+    request.include('react-router')
     request.include('reflux')
     request.include('pure')
     request.include('MyBox/static/js/main.jsx')
