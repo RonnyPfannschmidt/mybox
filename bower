@@ -4,3 +4,4 @@ SCRIPT=./node_modules/bower/bin/bower
 test -f $SCRIPT || npm install bower
 
 ./node_modules/bower/bin/bower $@
+
