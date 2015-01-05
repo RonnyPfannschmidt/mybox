@@ -48,21 +48,20 @@ def hello(self, request):
         <title>MyBox</title>
     </head>
     <body>
-    <div id="startpoint">
+    <div>
         <h2>MyBox</h1>
         <p>
             Email Loading
         </p>
     </div>
     <script type="text/jsx">
-    var startpoint = document.getElementById('startpoint');
     React.render(
-        <div id="startpoint">
+        <div>
           <h2>MyBox Startup</h2>
           <p> Email starting</p>
         </div>
-        , startpoint);
-    MyBox.startup(startpoint);
+        , document.body);
+    MyBox.startup(document.body);
     </script>
     </body>
     </html>
