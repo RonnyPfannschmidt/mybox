@@ -56,12 +56,6 @@ def hello(self, request):
         </p>
     </div>
     <script type="text/jsx">
-    React.render(
-        <div>
-          <h2>MyBox Startup</h2>
-          <p> Email starting</p>
-        </div>
-        , document.body);
     MyBox.startup(document.body);
     </script>
     </body>
