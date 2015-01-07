@@ -61,4 +61,3 @@ def hello(self, request):
     </body>
     </html>
     """
-
