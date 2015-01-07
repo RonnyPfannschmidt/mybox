@@ -1,5 +1,6 @@
 *** Settings ***
 Library  Selenium2Library
+Test Setup  Goto Main
 
 *** Variables ***
 
@@ -8,9 +9,8 @@ ${BROWSER}  PhantomJS
 *** Test Cases ***
 
 Scenario: Title Check
-    Goto Main
+    Click Element  link=Inbox
 
-    Wait Until Element is Visible  css=a.pure-menu-title
 
 
 *** Keywords ***
@@ -19,3 +19,4 @@ Scenario: Title Check
 Goto Main
     Create Webdriver  ${BROWSER}
     Go to  ${SERVER}
+    Wait Until Element is Visible  css=a.pure-menu-title
