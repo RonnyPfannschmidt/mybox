@@ -29,7 +29,7 @@ MyBox.App = React.createClass({
   }
 });
 
-MyBox.Dashboard = React.createClass({
+MyBox.Inbox = React.createClass({
   render: function () {
     return (
       <div className="pure-u-1">
@@ -48,7 +48,7 @@ MyBox.Routes = function() {
 
   return (
     <Route name='app' path='/' handler={MyBox.App}>
-      <DefaultRoute handler={MyBox.Dashboard}/>
+      <DefaultRoute handler={MyBox.Inbox}/>
     </Route>
     )
 };
