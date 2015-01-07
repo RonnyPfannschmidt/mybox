@@ -17,5 +17,9 @@ check:
 test:
 	py.test
 
+robot_test:
+	tox -e robot
+
+
 serve:
 	python -m mybox
