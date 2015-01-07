@@ -2,9 +2,4 @@
 
 pytest
 pytest-cache
-
-flake8
-mccabe
-
-robotframework
-robotframework-selenium2library
+pycmd
