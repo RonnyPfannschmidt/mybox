@@ -1,6 +1,7 @@
 *** Settings ***
-Library  Selenium2Library
+Library  Selenium2Library  timeout=2
 Test Setup  Goto Main
+Test Teardown  Close Browser
 
 *** Variables ***
 
