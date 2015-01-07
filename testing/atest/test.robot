@@ -3,11 +3,19 @@ Library  Selenium2Library
 
 *** Variables ***
 
-${server}  http://localhost:5000/
-
+${SERVER}  http://localhost:5000/
+${BROWSER}  PhantomJS
 *** Test Cases ***
 
-Scenario: test
-    Create Webdriver  PhantomJS
-    Go to  ${server}
+Scenario: Title Check
+    Goto Main
 
+    Wait Until Element is Visible  css=a.pure-menu-title
+
+
+*** Keywords ***
+
+
+Goto Main
+    Create Webdriver  ${BROWSER}
+    Go to  ${SERVER}

@@ -3,3 +3,7 @@
 pytest
 pytest-cache
 pycmd
+
+selenium
+robotframework
+robotframework-selenium2library

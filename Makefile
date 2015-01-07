@@ -18,8 +18,8 @@ test:
 	py.test
 
 robot_test:
-	tox -e robot
+	pybot testing/atest
 
 
 serve:
-	python -m mybox
+	PYTHONPATH=. python -m mybox
