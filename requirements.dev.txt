@@ -7,3 +7,4 @@ pycmd
 selenium
 robotframework
 robotframework-selenium2library
+robotframework-debuglibrary

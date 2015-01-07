@@ -1,5 +1,6 @@
 *** Settings ***
-Library  Selenium2Library  timeout=2
+Library  Selenium2Library  timeout=2  run_on_failure=Debug
+Library  DebugLibrary
 Test Setup  Goto Main
 Test Teardown  Close Browser
 
@@ -9,8 +10,8 @@ ${SERVER}  http://localhost:5000/
 ${BROWSER}  PhantomJS
 *** Test Cases ***
 
-Scenario: Title Check
-    Click Element  link=Inbox
+Scenario: Goto Inbox
+    Click Element  id=inbox-link
 
 
 

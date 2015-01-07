@@ -20,7 +20,7 @@ MyBox.App = React.createClass({
         <div className="pure-menu pure-menu-open pure-u-1">
           <Link className="pure-menu-title" to="app">MyBox</Link>
           <ul>
-            <li><Link to="app">Inbox</Link></li>
+            <li><Link id="inbox-link" to="app">Inbox</Link></li>
           </ul>
         </div>
         <RouteHandler/>
