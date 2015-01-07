@@ -1,3 +1,4 @@
+BROWSER=PhantomJS
 
 fetch_deps:
 	./bower install
@@ -18,7 +19,8 @@ test:
 	py.test
 
 robot_test:
-	pybot testing/atest
+	mkdir -p selenium_result
+	pybot -d selenium_result --variable BROWSER:${BROWSER} testing/atest
 
 
 serve:
