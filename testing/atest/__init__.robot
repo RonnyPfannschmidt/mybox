@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   Mybox Acceptance Testsuite
-Library  Selenium2Library  timeout=2  run_on_failure=Debug
+Library  Selenium2Library  timeout=2
 Library  DebugLibrary
 
 Suite Setup  Goto Main
@@ -18,4 +18,4 @@ ${BROWSER}  PhantomJS
 Goto Main
     Create Webdriver  ${BROWSER}
     Go to  ${SERVER}
-    Wait Until Element is Visible  css=a.pure-menu-title
+    Wait Until Element is Visible  css=a.pure-menu

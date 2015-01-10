@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Library  timeout=2  run_on_failure=Debug
+Library  Selenium2Library  timeout=2
 Library  DebugLibrary
 
 
@@ -7,8 +7,9 @@ Library  DebugLibrary
 *** Test Cases ***
 
 Scenario: Goto Inbox
-    Click Element  id=inbox-link
-
-
+    Given  The User Clicks inbox in the Mainmenu
 
 *** Keywords ***
+
+The User Clicks ${name} in the Mainmenu
+    Click Element  id=${name}-link

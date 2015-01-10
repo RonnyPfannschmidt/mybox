@@ -9,3 +9,4 @@ ghostdriver\.log
 log\.html
 output\.xml
 report\.html
+selenium_result/

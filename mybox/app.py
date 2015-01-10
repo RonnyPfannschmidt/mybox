@@ -56,9 +56,6 @@ def hello(self, request):
             Email Loading
         </p>
     </div>
-    <script type="text/jsx">
-    MyBox.startup(document.body);
-    </script>
     </body>
     </html>
     """
