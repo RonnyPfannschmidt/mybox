@@ -18,4 +18,4 @@ ${BROWSER}  PhantomJS
 Goto Main
     Create Webdriver  ${BROWSER}
     Go to  ${SERVER}
-    Wait Until Element is Visible  css=a.pure-menu
+    Wait Until Element is Visible  css=.pure-menu a

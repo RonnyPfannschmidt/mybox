@@ -7,9 +7,14 @@ Library  DebugLibrary
 *** Test Cases ***
 
 Scenario: Goto Inbox
-    Given  The User Clicks inbox in the Mainmenu
+    Given the User Clicks inbox in the Mainmenu
+    Then the Mailboxes are visible
 
 *** Keywords ***
 
-The User Clicks ${name} in the Mainmenu
+the User Clicks ${name} in the Mainmenu
     Click Element  id=${name}-link
+
+
+the Mailboxes are visible
+    Page Should Contain  wut

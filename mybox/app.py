@@ -20,23 +20,25 @@ def jsx_script_tag(url):
 bower.renderer('.jsx', jsx_script_tag)
 
 
-class App(StaticApp):
-    pass
+class Main(StaticApp):
+    def __init__(self, root):
+        pass
 
 
-@App.static_components()
+@Main.static_components()
 def get_static():
     return local
 
 
-@App.path(path='')
+@Main.path(path='')
 class Root(object):
     pass
 
 
-@App.html(model=Root)
+@Main.html(model=Root)
 def hello(self, request):
     request.include('es5-shim')
+    request.include('jquery')
     request.include('react/react-with-addons.js')
     request.include('react/JSXTransformer.js')
     request.include('react-router')
@@ -48,6 +50,9 @@ def hello(self, request):
     <html>
     <head>
         <title>MyBox</title>
+        <style>
+        body { padding: .5em; }
+        </style>
     </head>
     <body>
     <div>

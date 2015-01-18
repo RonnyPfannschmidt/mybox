@@ -6,6 +6,14 @@ DefaultRoute = ReactRouter.DefaultRoute;
 Link = ReactRouter.Link;
 State = ReactRouter.State;
 
+Mybox.Link = React.createClass({
+  render: function() {
+    return <ReactRouter.Link
+      activeClassName="pure-button-active"
+      to={this.props.to} >{this.children}</ReactRouter.Link>
+  }
+});
+
 MyBox.App = React.createClass({
   mixins: [State],
   render: function () {
@@ -14,8 +22,8 @@ MyBox.App = React.createClass({
         <div className="pure-menu pure-menu-open pure-menu-horizontal pure-u-1">
           <h3>MyBox</h3>
           <ul>
-            <li><Link activeClassName="pure-button-active" to="mail">Inbox</Link></li>
-            <li><Link activeClassName="pure-button-active" to="about">About</Link></li>
+            <li><MyBox.Link to="mail">Inbox</MyBox.Link></li>
+            <li><MyBox.Link to="about">About</MyBox.Link></li>
           </ul>
         </div>
         <RouteHandler/>
