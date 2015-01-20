@@ -3,7 +3,6 @@ import bowerstatic
 from os.path import abspath, dirname, join
 
 root = dirname(dirname(abspath(__file__)))
-print root
 
 bower = bowerstatic.Bower()
 components = bower.components(
