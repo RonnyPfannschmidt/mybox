@@ -1,7 +1,8 @@
 BROWSER=PhantomJS
 
 fetch_deps:
-	./bower install
+	npm install
+	bower install
 
 clean:
 	rm -rf node_modules bower_components
@@ -17,10 +18,6 @@ check:
 
 test:
 	py.test
-
-robot_test:
-	mkdir -p selenium_result
-	pybot -d selenium_result --variable BROWSER:${BROWSER} testing/atest
 
 
 serve:

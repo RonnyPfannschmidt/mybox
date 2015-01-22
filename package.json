@@ -1,0 +1,23 @@
+{
+  "name": "MyBOx",
+  "version": "0.0.0",
+  "description": "MyBox MUA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "hg",
+    "url" : "http://bitbucket.org/RonnyPfannschmidt/mybox"
+  },
+  "dependencies" : {
+    "ember-cli": "latest",
+    "bower": "latest"
+  },
+  "author": {
+    "name": "Ronny Pfannschmidt",
+    "email": "opensource@ronnypfannschmidt.de",
+    "url": "http://ronnypfannschmidt.de"
+  },
+  "license": "BSD"
+}
