@@ -1,5 +1,3 @@
-BROWSER=PhantomJS
-
 fetch_deps:
 	npm install
 	bower install
@@ -19,6 +17,5 @@ check:
 test:
 	py.test
 
-
 serve:
-	PYTHONPATH=. python -m mybox
+	python -m mybox
