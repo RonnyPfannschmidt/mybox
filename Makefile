@@ -1,6 +1,7 @@
 fetch_deps:
 	npm install
 	bower install
+	tox -e dev -rm`
 
 clean:
 	rm -rf node_modules bower_components
