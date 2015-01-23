@@ -3,3 +3,19 @@
 \.cache
 \.eggs
 .*\.egg-info
+
+
+node_modules/
+bower_components/
+
+# compiled output
+dist/
+tmp/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
