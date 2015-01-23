@@ -3,7 +3,7 @@
 \.cache
 \.eggs
 .*\.egg-info
-
+.*\.egg/
 
 node_modules/
 bower_components/
