@@ -16,7 +16,7 @@ local.component(root, version=None)
 def jsx_script_tag(url):
     return '<script src="%s" type="text/jsx"></script>' % url
 
-bower.renderer('.jsx', jsx_script_tag)
+bower.register_renderer('.jsx', jsx_script_tag)
 
 
 class Main(StaticApp):
