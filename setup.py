@@ -8,7 +8,5 @@ setup(
         'hgdistver',
     ],
     requires=[
-        'more.static',
-        'werkzeug',
     ]
 )

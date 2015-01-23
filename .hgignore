@@ -3,10 +3,3 @@
 \.cache
 \.eggs
 .*\.egg-info
-node_modules
-bower_components
-ghostdriver\.log
-log\.html
-output\.xml
-report\.html
-selenium_result/
