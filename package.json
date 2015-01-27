@@ -8,6 +8,8 @@
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "jspm": "~0.10.6"
   }
 }
