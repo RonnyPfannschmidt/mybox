@@ -5,11 +5,11 @@ from mybox.backend import sql, maildir, memory
 @pytest.fixture(
     params=[sql, maildir, memory],
     ids=['sql', 'maildir', 'memory'])
-def backend(request, tmpdir):
+def backend(request):
     if request.param is sql:
-        arg = 'sqlite:///%s' % tmpdir
+        arg = 'memory:'
     elif request.param is maildir:
-        arg = tmpdir
+        arg = request.getfuncargvalue('tmpdir')
     else:
         arg = {}
     return request.param.Backend.create(arg)

@@ -13,5 +13,6 @@ setup(
     ],
     requires=[
         'werkzeug',
+        'scandir',
     ]
 )
