@@ -12,5 +12,9 @@
   "dependencies": {
     "jspm": "~0.10.6"
   },
-  "jspm": {}
+  "jspm": {
+    "dependencies": {
+      "livereload": "npm:livereload@^0.3.6"
+    }
+  }
 }
