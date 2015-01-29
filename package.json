@@ -11,5 +11,6 @@
   "devDependencies": {},
   "dependencies": {
     "jspm": "~0.10.6"
-  }
+  },
+  "jspm": {}
 }
