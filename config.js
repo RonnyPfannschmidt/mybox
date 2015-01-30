@@ -1,7 +1,7 @@
 System.config({
   "paths": {
     "*": "*.js",
-    "my-box/*": "app/*.js",
+    "my-box/*": "lib/*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
   }
@@ -230,12 +230,19 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
+    "npm:create-hmac@1.1.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "create-hash": "npm:create-hash@1.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "inherits": "npm:inherits@2.0.1",
+      "stream": "github:jspm/nodelibs-stream@0.1.0"
+    },
     "npm:crypto-browserify@3.9.11": {
       "browserify-aes": "npm:browserify-aes@1.0.0",
       "browserify-sign": "npm:browserify-sign@2.8.0",
       "create-ecdh": "npm:create-ecdh@1.0.3",
       "create-hash": "npm:create-hash@1.1.0",
-      "create-hmac": "npm:create-hmac@1.1.2",
+      "create-hmac": "npm:create-hmac@1.1.3",
       "diffie-hellman": "npm:diffie-hellman@3.0.1",
       "inherits": "npm:inherits@2.0.1",
       "pbkdf2-compat": "npm:pbkdf2-compat@2.0.1",
