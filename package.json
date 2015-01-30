@@ -14,6 +14,7 @@
   },
   "jspm": {
     "dependencies": {
+      "aurelia-bootstrapper": "^0.9.3",
       "livereload": "npm:livereload@^0.3.6"
     },
     "buildConfig": {
