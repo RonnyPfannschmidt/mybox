@@ -15,6 +15,10 @@
   "jspm": {
     "dependencies": {
       "livereload": "npm:livereload@^0.3.6"
+    },
+    "buildConfig": {
+      "transpileES6": true,
+      "minify": true
     }
   }
 }

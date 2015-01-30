@@ -1,7 +1,7 @@
 System.config({
   "paths": {
     "*": "*.js",
-    "my-box/*": "lib/*.js",
+    "my-box:*": "lib/*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
   }

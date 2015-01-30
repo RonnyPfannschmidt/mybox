@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='mybox',
@@ -7,12 +7,7 @@ setup(
     setup_requires=[
         'hgdistver',
     ],
-    packages=[
-        'mybox',
-        'mybox.backend',
-    ],
     requires=[
-        'werkzeug',
-        'scandir',
+        'livereload'
     ]
 )
