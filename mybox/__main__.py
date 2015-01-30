@@ -12,7 +12,7 @@ def F(match, **opts):
 
 class ShellHandler(StaticFileHandler):
     def get(self, include_body=True):
-        super(ShellHandler, self).get('index.html')
+        super(ShellHandler, self).get('index.html', include_body)
 
 
 class MyBoxServer(BaseServer):
@@ -20,9 +20,9 @@ class MyBoxServer(BaseServer):
         return [
             F('/jspm_packages/(config\.js)', path='.',),
             F('/jspm_packages/(.*)', path='jspm_packages'),
-            F('/lib/(.*)', path='app'),
+            F('/(?:lib|my-box)/(.*)', path='app'),
             ('api/(.*)', APIHandler, {'backend': None}),
-            ('.*', ShellHandler, {'path': 'app/html'}),
+            ('/.*', ShellHandler, {'path': 'app/html'}),
         ]
 
 
