@@ -1,18 +1,17 @@
 
 <html>
+<head>
 <meta charset="UTF-8">
-<script src="jspm_packages/system.js"></script>
-<script src="jspm_packages/config.js"></script>
+<script src="/jspm_packages/system.js"></script>
+<script src="/jspm_packages/config.js"></script>
 <script>
     System.baseURL = '/';
-    System.parser = '6to5';
+    //System.parser = '6to5';
     System.import('aurelia-bootstrapper').catch(console.error.bind(console));
-
 </script>
-<head>
-
-<div aurelia-app=lib/main>
-<h1>Mybox is Loading</h1>
-
-</div>
 </head>
+
+<div aurelia-app="lib/main">
+<h1>Mybox is Loading</h1>
+<span class="spinner"/>
+</div>

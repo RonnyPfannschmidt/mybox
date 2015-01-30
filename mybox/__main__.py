@@ -10,6 +10,10 @@ from mybox.web import APIHandler
 def F(match, **opts):
     return (match, StaticFileHandler, opts)
 
+class ShellHandler(StaticFileHandler):
+    def get(self, include_body=True):
+        super(ShellHandler, self).get('index.html')
+
 
 class MyBoxServer(BaseServer):
     def get_web_handlers(self):
@@ -18,7 +22,7 @@ class MyBoxServer(BaseServer):
             F('/jspm_packages/(.*)', path='jspm_packages'),
             F('/lib/(.*)', path='app'),
             ('api/(.*)', APIHandler, {'backend': None}),
-            F('.*()', path='app/html', default_filename='index.html'),
+            ('.*', ShellHandler, {'path': 'app/html'}),
         ]
 
 
