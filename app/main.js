@@ -9,8 +9,10 @@ export class App {
     this.router = router;
     this.router.configure(config => {
       config.title = 'MyBox';
+      config.options.pushState = true;
       config.map([
-        { route: ['','about'], moduleId: 'about', nav: true, title:'About'},
+        { route:[ '','about'], moduleId: './about', nav: true, title:'About'},
+        { route: 'about2/', moduleId: './about2', nav: true, title:'About2'},
       ]);
     });
   }
