@@ -12,7 +12,6 @@ export class App {
       config.options.pushState = true;
       config.map([
         { route:[ '','about'], moduleId: './about', nav: true, title:'About'},
-        { route: 'about2/', moduleId: './about2', nav: true, title:'About2'},
       ]);
     });
   }

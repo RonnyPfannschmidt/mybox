@@ -10,7 +10,8 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "jspm": "~0.10.6"
+    "jspm": "~0.10.6",
+    "aurelia-tools": "~0.1.0"
   },
   "jspm": {
     "dependencies": {
