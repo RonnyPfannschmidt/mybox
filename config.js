@@ -9,35 +9,88 @@ System.config({
 
 System.config({
   "depCache": {
-    "github:aurelia/http-client@0.4.3/system/http-response-message": [
-      "github:aurelia/http-client@0.4.3/system/headers"
+    "github:aurelia/router@0.5.5/system/route-loading": [
+      "github:aurelia/router@0.5.5/system/navigation-plan"
     ],
-    "github:aurelia/http-client@0.4.3/system/jsonp-request-message": [
-      "github:aurelia/http-client@0.4.3/system/http-response-message"
+    "github:aurelia/route-recognizer@0.2.2/system/index": [
+      "github:aurelia/route-recognizer@0.2.2/system/dsl"
     ],
     "github:aurelia/path@0.4.2": [
       "github:aurelia/path@0.4.2/system/index"
     ],
-    "github:aurelia/http-client@0.4.3/system/http-request-message": [
-      "github:aurelia/http-client@0.4.3/system/headers",
-      "github:aurelia/http-client@0.4.3/system/http-response-message"
+    "github:aurelia/router@0.5.5/system/navigation-context": [
+      "github:aurelia/router@0.5.5/system/navigation-plan"
     ],
-    "github:aurelia/http-client@0.4.3/system/http-client": [
+    "github:aurelia/metadata@0.3.1/system/index": [
+      "github:aurelia/metadata@0.3.1/system/origin",
+      "github:aurelia/metadata@0.3.1/system/resource-type",
+      "github:aurelia/metadata@0.3.1/system/metadata"
+    ],
+    "github:aurelia/dependency-injection@0.4.2/system/container": [
+      "github:aurelia/metadata@0.3.1",
+      "github:aurelia/dependency-injection@0.4.2/system/metadata",
+      "github:aurelia/dependency-injection@0.4.2/system/util"
+    ],
+    "github:aurelia/history@0.2.2": [
+      "github:aurelia/history@0.2.2/system/index"
+    ],
+    "github:aurelia/router@0.5.5/system/activation": [
+      "github:aurelia/router@0.5.5/system/navigation-plan",
+      "github:aurelia/router@0.5.5/system/navigation-commands",
+      "github:aurelia/router@0.5.5/system/util"
+    ],
+    "github:aurelia/route-recognizer@0.2.2": [
+      "github:aurelia/route-recognizer@0.2.2/system/index"
+    ],
+    "github:aurelia/metadata@0.3.1": [
+      "github:aurelia/metadata@0.3.1/system/index"
+    ],
+    "github:aurelia/router@0.5.5/system/pipeline-provider": [
+      "github:aurelia/dependency-injection@0.4.2",
+      "github:aurelia/router@0.5.5/system/pipeline",
+      "github:aurelia/router@0.5.5/system/navigation-plan",
+      "github:aurelia/router@0.5.5/system/model-binding",
+      "github:aurelia/router@0.5.5/system/route-loading",
+      "github:aurelia/router@0.5.5/system/navigation-context",
+      "github:aurelia/router@0.5.5/system/activation"
+    ],
+    "github:aurelia/router@0.5.5/system/router": [
+      "github:aurelia/route-recognizer@0.2.2",
       "github:aurelia/path@0.4.2",
-      "github:aurelia/http-client@0.4.3/system/http-request-message",
-      "github:aurelia/http-client@0.4.3/system/http-response-message",
-      "github:aurelia/http-client@0.4.3/system/jsonp-request-message",
-      "github:aurelia/http-client@0.4.3/system/headers"
+      "github:aurelia/router@0.5.5/system/navigation-context",
+      "github:aurelia/router@0.5.5/system/navigation-instruction",
+      "github:aurelia/router@0.5.5/system/router-configuration",
+      "github:aurelia/router@0.5.5/system/util"
     ],
-    "github:aurelia/http-client@0.4.3/system/index": [
-      "github:aurelia/http-client@0.4.3/system/http-client",
-      "github:aurelia/http-client@0.4.3/system/http-request-message",
-      "github:aurelia/http-client@0.4.3/system/http-response-message",
-      "github:aurelia/http-client@0.4.3/system/jsonp-request-message",
-      "github:aurelia/http-client@0.4.3/system/headers"
+    "github:aurelia/dependency-injection@0.4.2/system/index": [
+      "github:aurelia/metadata@0.3.1",
+      "github:aurelia/dependency-injection@0.4.2/system/metadata",
+      "github:aurelia/dependency-injection@0.4.2/system/container"
     ],
-    "github:aurelia/http-client@0.4.3": [
-      "github:aurelia/http-client@0.4.3/system/index"
+    "github:aurelia/dependency-injection@0.4.2": [
+      "github:aurelia/dependency-injection@0.4.2/system/index"
+    ],
+    "github:aurelia/router@0.5.5/system/app-router": [
+      "github:aurelia/dependency-injection@0.4.2",
+      "github:aurelia/history@0.2.2",
+      "github:aurelia/router@0.5.5/system/router",
+      "github:aurelia/router@0.5.5/system/pipeline-provider",
+      "github:aurelia/router@0.5.5/system/navigation-commands"
+    ],
+    "github:aurelia/router@0.5.5/system/index": [
+      "github:aurelia/router@0.5.5/system/router",
+      "github:aurelia/router@0.5.5/system/app-router",
+      "github:aurelia/router@0.5.5/system/pipeline-provider",
+      "github:aurelia/router@0.5.5/system/navigation-commands",
+      "github:aurelia/router@0.5.5/system/route-loading",
+      "github:aurelia/router@0.5.5/system/router-configuration",
+      "github:aurelia/router@0.5.5/system/navigation-plan"
+    ],
+    "github:aurelia/router@0.5.5": [
+      "github:aurelia/router@0.5.5/system/index"
+    ],
+    "my-box/main": [
+      "github:aurelia/router@0.5.5"
     ]
   }
 });
@@ -46,7 +99,9 @@ System.config({
   "map": {
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.9.3",
     "aurelia-http-client": "github:aurelia/http-client@0.4.4",
+    "aurelia-router": "github:aurelia/router@0.5.5",
     "livereload": "npm:livereload@0.3.6",
+    "router": "github:aurelia/router@0.5.5",
     "github:aurelia/binding@0.3.4": {
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.4.2",
       "aurelia-metadata": "github:aurelia/metadata@0.3.1",
