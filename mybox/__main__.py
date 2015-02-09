@@ -17,8 +17,8 @@ class ShellHandler(StaticFileHandler):
 
 
 handlers = [
-    F('/jspm_packages/(config\.js)', path='.',),
     F('/jspm_packages/(.*)', path='jspm_packages'),
+    F('/(\w+\.js.*)', path='.',),
     F('/(?:lib|my-box)/(.*)', path='lib'),
     ('api/(.*)', APIHandler, {'backend': None}),
     ('/.*', ShellHandler, {'path': 'lib/html'}),
