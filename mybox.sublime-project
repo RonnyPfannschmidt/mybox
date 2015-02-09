@@ -1,0 +1,25 @@
+{
+
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"name": "Python package",
+			"path": "mybox"
+		},
+		{
+			"folder_exclude_patterns":
+			[
+				"*"
+			],
+			"follow_symlinks": true,
+			"name": "Root",
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Javascript",
+			"path": "lib"
+		}
+	]
+}

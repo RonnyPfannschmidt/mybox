@@ -20,3 +20,4 @@ tmp/
 npm-debug.log
 testem.log
 jspm_packages/
+mybox.sublime-workspace
