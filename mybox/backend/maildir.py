@@ -7,6 +7,18 @@ ELEMENTS = 'tmp', 'cur', 'new'
 def map_maildir_name(name):
     return ''
 
+def list_maildirs(path):
+    items = os.listdir(path)
+
+    res = [
+        x for x in items
+        if len(x) > 2 and x[0] == '.' and x[1] != '.'
+    ]
+
+    if all(x in items for x in ELEMENTS):
+        res.append('inbox')
+    return res
+
 
 class Backend(object):
     def __init__(self, path):
@@ -18,7 +30,7 @@ class Backend(object):
 
     def tree(self):
         try:
-            items = os.listdir(self.path)
+            items = list_maildirs(self.path)
             return dict.fromkeys(items)
         except IOError:
             return {}

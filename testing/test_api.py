@@ -23,4 +23,4 @@ def test_tree_emty(backend):
 def test_add_folder(backend):
     backend.add_folder('inbox')
 
-    assert backend.tree() != {}
+    assert list(backend.tree().keys()) == ['inbox']
