@@ -10,11 +10,16 @@
 	],
 	"folders":
 	[
-		{
-			"follow_symlinks": true,
-			"name": "Python package",
-			"path": "mybox"
-		},
+        {
+            "follow_symlinks": true,
+            "name": "Python package",
+            "path": "mybox"
+        },
+        {
+            "follow_symlinks": true,
+            "name": "Python testing",
+            "path": "testing"
+        },
 		{
 			"folder_exclude_patterns":
 			[
