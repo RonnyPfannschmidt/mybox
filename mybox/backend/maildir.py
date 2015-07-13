@@ -4,8 +4,9 @@ import os
 ELEMENTS = 'tmp', 'cur', 'new'
 
 
-def map_maildir_name(name):
+def folder_to_mainldir(name):
     return ''
+
 
 def list_maildirs(path):
     items = os.listdir(path)

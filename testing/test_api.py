@@ -23,4 +23,23 @@ def test_tree_emty(backend):
 def test_add_folder(backend):
     backend.add_folder('inbox')
 
-    assert list(backend.tree().keys()) == ['inbox']
+    assert list(backend.tree()) == ['inbox']
+
+
+def test_add_other(backend):
+    backend.add_folder('inbox')
+    backend.add_folder('other')
+    assert sorted(backend.tree()) == ['inbox', 'other']
+
+
+def test_subfolders(backend):
+    test_add_other(backend)
+    backend.add_folder('inbox/1337')
+    backend.add_folder('other/lame')
+    assert sorted(backend.tree()) == [
+        'inbox', 'inbox/1337',
+        'other', 'other/lame',
+    ]
+
+
+
