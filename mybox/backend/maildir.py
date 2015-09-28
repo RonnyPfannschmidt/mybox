@@ -35,7 +35,6 @@ class Backend(object):
     def __init__(self, path):
         self.path = path
 
-
     @classmethod
     def create(cls, path):
         return cls(str(path))
